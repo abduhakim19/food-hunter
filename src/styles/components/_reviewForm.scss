@@ -1,0 +1,88 @@
+.review__form {
+  display: grid;
+  grid-row-gap: 9px;
+
+  &__alert {
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 2.5px;
+    padding: 5px 13px;
+    font-size: 0.9em;
+  }
+}
+
+.form__group__name {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  font-size: 1em;
+  grid-template-columns: 1fr;
+
+  &__input {
+    min-width: 45px;
+    min-height: 45px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 1em;
+    color: #232323;
+    border: 1px solid #7b7b7b;
+    border-radius: 5px;
+  }
+}
+
+.form__group__review {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  font-size: 1em;
+  grid-template-columns: 1fr;
+  &__input {
+    min-width: 45px;
+    min-height: 45px;
+    width: 100%;
+    padding: 4px 19px;
+    font-size: 1em;
+    color: #232323;
+    border: 1px solid #7b7b7b;
+    border-radius: 5px;
+  }
+}
+
+.form__review__button {
+  color: white;
+  min-width: 45px;
+  min-height: 45px;
+  width: auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: $primary-color;
+  border: none;
+  grid-column-start: 4;
+  grid-column-end: 3;
+  cursor: pointer;
+}
+
+@media screen and (min-width : $tablet) {
+  .form__group__name {
+    grid-template-columns: 0.3fr 1fr;
+    & label {
+      width: 100%;
+      display: block;
+      line-height: 40px;
+    }
+  }
+
+  .form__group__review {
+    grid-template-columns: 0.3fr 1fr;
+    & label {
+      width: 100%;
+      display: block;
+      line-height: 70px;
+    }
+  }
+
+}

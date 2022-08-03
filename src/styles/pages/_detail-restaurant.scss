@@ -1,0 +1,103 @@
+.restaurant {
+  color: #212121;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__poster {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  &__title {
+    font-size: 2.05em;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    margin: 7px 0;
+
+    & h4 {
+      margin-top: 2px;
+    }
+  }
+
+  &__description {
+    margin: 7px 0;
+  }
+
+  &__menu {
+    margin: 10px 0;
+
+    &__title {
+      margin-bottom: 3px;
+    }
+
+    &__foods h4 {
+      margin-bottom: 1.5px;
+    }
+
+    &__drinks h4 {
+      margin: 3px 0 1.5px 0;
+    }
+  }
+
+  &__review {
+    margin: 2px 0 20px 0;
+    width: 83vw;
+    max-width: 450px;
+
+    &__box {
+      margin: 8px 0;
+    }
+
+    &__button {
+      & button {
+        color: #3a6b6b;
+        text-decoration: none;
+        line-height: 45px;
+        font-size: 1.1em;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      & button:hover, & button i:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 845px) {
+  .restaurant {
+    grid-template-columns: 1fr 1fr;
+
+    &__title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &__info {
+      margin-left: 25px;
+    }
+
+    &__description {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+    &__menu {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &__review {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../config';
+
+footer-app {
+  width: 100%;
+}
+
+footer-app p {
+  background-color: $primary-color;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4em;
+}
